@@ -1,9 +1,9 @@
-package com.commeow.webfluxcrudpractice.utils;
+package com.commeow.webfluxpractice.utils;
 
-import com.commeow.webfluxcrudpractice.dto.board.BoardResponseDto;
-import com.commeow.webfluxcrudpractice.dto.member.MemberResponseDto;
-import com.commeow.webfluxcrudpractice.entity.Board;
-import com.commeow.webfluxcrudpractice.entity.Member;
+import com.commeow.webfluxpractice.dto.board.BoardResponseDto;
+import com.commeow.webfluxpractice.dto.member.MemberResponseDto;
+import com.commeow.webfluxpractice.entity.Board;
+import com.commeow.webfluxpractice.entity.Member;
 
 public class AppUtils {
 
