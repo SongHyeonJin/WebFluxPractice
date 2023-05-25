@@ -1,4 +1,4 @@
-package com.commeow.webfluxcrudpractice.dto;
+package com.commeow.webfluxpractice.dto;
 
 public enum StatusCode {
     OK(200, "OK"),

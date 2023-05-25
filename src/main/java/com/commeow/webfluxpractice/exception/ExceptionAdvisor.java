@@ -1,6 +1,6 @@
-package com.commeow.webfluxcrudpractice.exception;
+package com.commeow.webfluxpractice.exception;
 
-import com.commeow.webfluxcrudpractice.dto.ResponseDto;
+import com.commeow.webfluxpractice.dto.ResponseDto;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;

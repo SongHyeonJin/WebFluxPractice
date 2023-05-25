@@ -1,4 +1,4 @@
-package com.commeow.webfluxcrudpractice.dto;
+package com.commeow.webfluxpractice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
