@@ -1,13 +1,13 @@
-package com.commeow.webfluxcrudpractice;
+package com.commeow.webfluxpractice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class WebFluxCrudPracticeApplication {
+public class WebFluxPracticeApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(WebFluxCrudPracticeApplication.class, args);
+        SpringApplication.run(WebFluxPracticeApplication.class, args);
     }
 
 }
