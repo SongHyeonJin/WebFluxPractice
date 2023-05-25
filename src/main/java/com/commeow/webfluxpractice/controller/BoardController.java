@@ -1,8 +1,8 @@
-package com.commeow.webfluxcrudpractice.controller;
+package com.commeow.webfluxpractice.controller;
 
-import com.commeow.webfluxcrudpractice.dto.board.BoardRequestDto;
-import com.commeow.webfluxcrudpractice.dto.board.BoardResponseDto;
-import com.commeow.webfluxcrudpractice.service.BoardService;
+import com.commeow.webfluxpractice.dto.board.BoardRequestDto;
+import com.commeow.webfluxpractice.dto.board.BoardResponseDto;
+import com.commeow.webfluxpractice.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

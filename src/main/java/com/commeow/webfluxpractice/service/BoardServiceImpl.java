@@ -1,10 +1,10 @@
-package com.commeow.webfluxcrudpractice.service;
+package com.commeow.webfluxpractice.service;
 
-import com.commeow.webfluxcrudpractice.dto.board.BoardRequestDto;
-import com.commeow.webfluxcrudpractice.dto.board.BoardResponseDto;
-import com.commeow.webfluxcrudpractice.entity.Board;
-import com.commeow.webfluxcrudpractice.repository.BoardRepository;
-import com.commeow.webfluxcrudpractice.utils.AppUtils;
+import com.commeow.webfluxpractice.dto.board.BoardRequestDto;
+import com.commeow.webfluxpractice.dto.board.BoardResponseDto;
+import com.commeow.webfluxpractice.entity.Board;
+import com.commeow.webfluxpractice.repository.BoardRepository;
+import com.commeow.webfluxpractice.utils.AppUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

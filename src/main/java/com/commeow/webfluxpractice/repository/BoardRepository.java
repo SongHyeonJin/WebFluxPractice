@@ -1,6 +1,6 @@
-package com.commeow.webfluxcrudpractice.repository;
+package com.commeow.webfluxpractice.repository;
 
-import com.commeow.webfluxcrudpractice.entity.Board;
+import com.commeow.webfluxpractice.entity.Board;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 
 public interface BoardRepository extends ReactiveCrudRepository<Board,String> {

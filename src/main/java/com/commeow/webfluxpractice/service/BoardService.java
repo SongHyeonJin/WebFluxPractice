@@ -1,7 +1,7 @@
-package com.commeow.webfluxcrudpractice.service;
+package com.commeow.webfluxpractice.service;
 
-import com.commeow.webfluxcrudpractice.dto.board.BoardRequestDto;
-import com.commeow.webfluxcrudpractice.dto.board.BoardResponseDto;
+import com.commeow.webfluxpractice.dto.board.BoardRequestDto;
+import com.commeow.webfluxpractice.dto.board.BoardResponseDto;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 

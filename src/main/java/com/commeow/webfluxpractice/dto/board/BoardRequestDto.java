@@ -1,4 +1,4 @@
-package com.commeow.webfluxcrudpractice.dto.board;
+package com.commeow.webfluxpractice.dto.board;
 
 import lombok.Getter;
 
