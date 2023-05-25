@@ -1,7 +1,7 @@
-package com.commeow.webfluxcrudpractice.entity;
+package com.commeow.webfluxpractice.entity;
 
-import com.commeow.webfluxcrudpractice.dto.member.LoginRequestDto;
-import com.commeow.webfluxcrudpractice.dto.member.SignupRequestDto;
+import com.commeow.webfluxpractice.dto.member.LoginRequestDto;
+import com.commeow.webfluxpractice.dto.member.SignupRequestDto;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;

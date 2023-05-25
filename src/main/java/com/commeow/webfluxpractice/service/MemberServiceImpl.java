@@ -1,12 +1,12 @@
-package com.commeow.webfluxcrudpractice.service;
+package com.commeow.webfluxpractice.service;
 
-import com.commeow.webfluxcrudpractice.dto.member.LoginRequestDto;
-import com.commeow.webfluxcrudpractice.dto.member.MemberResponseDto;
-import com.commeow.webfluxcrudpractice.dto.ResponseDto;
-import com.commeow.webfluxcrudpractice.dto.member.SignupRequestDto;
-import com.commeow.webfluxcrudpractice.entity.Member;
-import com.commeow.webfluxcrudpractice.repository.MemberRepository;
-import com.commeow.webfluxcrudpractice.utils.AppUtils;
+import com.commeow.webfluxpractice.dto.member.LoginRequestDto;
+import com.commeow.webfluxpractice.dto.member.MemberResponseDto;
+import com.commeow.webfluxpractice.dto.ResponseDto;
+import com.commeow.webfluxpractice.dto.member.SignupRequestDto;
+import com.commeow.webfluxpractice.entity.Member;
+import com.commeow.webfluxpractice.repository.MemberRepository;
+import com.commeow.webfluxpractice.utils.AppUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;

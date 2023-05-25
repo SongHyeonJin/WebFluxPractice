@@ -1,4 +1,4 @@
-package com.commeow.webfluxcrudpractice.dto.member;
+package com.commeow.webfluxpractice.dto.member;
 
 import lombok.Getter;
 
