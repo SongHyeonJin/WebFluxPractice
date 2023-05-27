@@ -3,6 +3,7 @@ package com.commeow.webfluxpractice.service;
 import com.commeow.webfluxpractice.dto.board.BoardRequestDto;
 import com.commeow.webfluxpractice.dto.board.BoardResponseDto;
 import com.commeow.webfluxpractice.entity.Board;
+import com.commeow.webfluxpractice.entity.Member;
 import com.commeow.webfluxpractice.repository.BoardRepository;
 import com.commeow.webfluxpractice.utils.AppUtils;
 import lombok.RequiredArgsConstructor;
@@ -25,8 +26,15 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
-    public Flux<BoardResponseDto> getAllBoards() {
-        return boardRepository.findAll().map(AppUtils::entityToDto);
+    public Flux<BoardResponseDto> getAllBoards(String userId) {
+        return boardRepository.findAll()
+                .flatMap(board -> {
+                    if(userId.equals(board.getMember().getUserId()))
+                        return boardRepository.findAll();
+                    else
+                        return Mono.error(new IllegalArgumentException("로그인하그라"));
+                })
+                .map(AppUtils::entityToDto);
     }
 
     @Override

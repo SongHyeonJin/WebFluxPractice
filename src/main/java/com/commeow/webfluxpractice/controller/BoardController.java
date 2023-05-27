@@ -2,9 +2,11 @@ package com.commeow.webfluxpractice.controller;
 
 import com.commeow.webfluxpractice.dto.board.BoardRequestDto;
 import com.commeow.webfluxpractice.dto.board.BoardResponseDto;
+import com.commeow.webfluxpractice.security.UserDetailsImpl;
 import com.commeow.webfluxpractice.service.BoardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -16,8 +18,8 @@ public class BoardController {
     private final BoardService boardService;
 
     @GetMapping
-    public Flux<BoardResponseDto> getAllBoards(){
-        return boardService.getAllBoards();
+    public Flux<BoardResponseDto> getAllBoards(@AuthenticationPrincipal UserDetailsImpl userDetails){
+        return boardService.getAllBoards(userDetails.getUsername());
     }
 
     @PostMapping
