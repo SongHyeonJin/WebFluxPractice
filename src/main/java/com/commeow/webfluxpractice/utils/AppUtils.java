@@ -1,9 +1,11 @@
 package com.commeow.webfluxpractice.utils;
 
+import com.commeow.webfluxpractice.dto.ResponseDto;
 import com.commeow.webfluxpractice.dto.board.BoardResponseDto;
 import com.commeow.webfluxpractice.dto.member.MemberResponseDto;
 import com.commeow.webfluxpractice.entity.Board;
 import com.commeow.webfluxpractice.entity.Member;
+import reactor.core.publisher.Mono;
 
 public class AppUtils {
 
@@ -14,7 +16,8 @@ public class AppUtils {
                 board.getContent(),
                 board.getNickname(),
                 board.getCurrentTime(),
-                board.getModifiedTime()
+                board.getModifiedTime(),
+                board.getMember()
         );
     }
 
@@ -25,7 +28,8 @@ public class AppUtils {
                 boardResponseDto.getContent(),
                 boardResponseDto.getNickname(),
                 boardResponseDto.getCurrentTime(),
-                boardResponseDto.getModifiedTime()
+                boardResponseDto.getModifiedTime(),
+                boardResponseDto.getMember()
         );
     }
 
@@ -34,7 +38,10 @@ public class AppUtils {
                 member.getId(),
                 member.getUserId(),
                 member.getNickname(),
+                member.getRole(),
                 member.getCurrentTime()
+
         );
     }
+
 }
