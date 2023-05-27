@@ -18,7 +18,7 @@ import java.time.LocalDateTime;
 @Document(value = "board_crud")
 public class Board {
     @Id
-    private String id;
+    private Long id;
     private String title;
     private String content;
     private String nickname;
@@ -26,6 +26,8 @@ public class Board {
     private LocalDateTime currentTime;
     @LastModifiedDate
     private LocalDateTime modifiedTime;
+    @Transient
+    private Member member;
 
     public Board(BoardRequestDto boardRequestDto, LocalDateTime currentTime, LocalDateTime modifiedTime){
         this.title = boardRequestDto.getTitle();
