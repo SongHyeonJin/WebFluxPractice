@@ -1,11 +1,13 @@
 package com.commeow.webfluxpractice.dto.member;
 
+import com.commeow.webfluxpractice.entity.MemberRole;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
 
 @Getter
 @NoArgsConstructor
@@ -21,4 +23,6 @@ public class SignupRequestDto {
     @NotNull
     @Size(min = 2, max = 10, message = "닉네임은 2~10자 사이여야 합니다.")
     private String nickname;
+    @NotNull
+    private MemberRole role;
 }
