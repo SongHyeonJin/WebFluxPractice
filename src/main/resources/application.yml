@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      database: WFBoard
+      database: WFCrud
       host: localhost
       port: 27017
   webflux:
@@ -20,3 +20,6 @@ logging:
   level:
     root: INFO
     com.example: DEBUG
+jwt:
+  secret:
+    key : 7Jqw7KO87LWc6rCVMeyhsOqwnOypjOuKlOqwnOuwnOyekOuhnOqxsOuTreuCmOyekO2ZlOydtO2MheynseynsQ==
