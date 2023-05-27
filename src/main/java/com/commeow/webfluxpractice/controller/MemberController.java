@@ -6,6 +6,7 @@ import com.commeow.webfluxpractice.dto.ResponseDto;
 import com.commeow.webfluxpractice.dto.member.SignupRequestDto;
 import com.commeow.webfluxpractice.service.MemberService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,12 +22,18 @@ public class MemberController {
     private final MemberService memberService;
 
     @PostMapping("/signup")
-    public ResponseDto<Mono<MemberResponseDto>> signup(@Valid @RequestBody SignupRequestDto signupRequestDto){
+    public Mono<MemberResponseDto> signup(@Valid @RequestBody SignupRequestDto signupRequestDto){
+//        if(errors.hasErrors()){
+//            List<String> errorMessage = errors.getFieldErrors()
+//                    .stream()
+//                    .map(FieldError::getDefaultMessage)
+//                    .collect(Collectors.toList());
+//        }
         return memberService.signup(signupRequestDto);
     }
 
     @PostMapping("/login")
-    public Mono<MemberResponseDto> login(@RequestBody LoginRequestDto loginRequestDto){
+    public Mono<ResponseEntity<String>> login(@RequestBody LoginRequestDto loginRequestDto){
         return memberService.login(loginRequestDto);
     }
 
